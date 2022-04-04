@@ -1,0 +1,110 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+body {
+   background-image: radial-gradient(circle at 75.99% -5.74%, #f8a15f 0, #fc9761 7.14%, #ff8c63 14.29%, #ff7f66 21.43%, #ff7169 28.57%, #fd626d 35.71%, #f95072 42.86%, #f23c78 50%, #e9257f 57.14%, #de0488 64.29%, #d10093 71.43%, #c2009e 78.57%, #af00aa 85.71%, #9913b7 92.86%, #7e26c3 100%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.container {
+   background-color: #fafafa;
+   width: 400px;
+   max-width: 100%;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 375px) {
+   .container{
+      width: 330px;
+   }
+}
+
+.header {
+   background-color: #f0f0f0;
+   padding: 20px;
+   font-size: 22px;
+}
+
+.form {
+   padding: 20px;
+}
+
+.form-control {
+   margin-bottom: 10px;
+   padding-bottom: 20px;
+   position: relative;
+}
+
+.form-control label {
+   display: inline-block;
+   margin-bottom: 5px;
+   
+}
+
+.form-control input {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 14px;
+   border: 2px solid #eee;
+   outline: 0;
+}
+
+.form-control i {
+   position: absolute;
+   top: 45px;
+   right: 10px;
+   visibility: hidden;
+}
+
+.form-control small {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   visibility: hidden;
+}
+
+.form button {
+   padding: 10px;
+   width: 100%;
+   border: 2px solid #c2009e;
+   background-color: #c2009e;
+   border-radius: 20px;
+   color: #f0f0f0;
+}
+
+/* Success and Error */
+
+.form-control.success input {
+   visibility: visible;
+   border-color: #00ff15;
+}
+.form-control.success i.fa-check-circle {
+   visibility: visible;
+   color: #00ff15;
+}
+
+.form-control.error i.fa-exclamation-circle{
+   visibility: visible;
+   color: #ff0000;
+}
+.form-control.error input {
+   border-color: #ff0000;
+}
+
+.form-control.error small {
+   visibility: visible;
+   color: #ff0000;
+}
